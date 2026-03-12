@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Linking to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Character encoding for better text display -->
+    <meta charset="UTF-8">
+    
+    <!-- Responsive viewport settings for mobile compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bigby - Portfolio</title>
+    
+    <!-- Link to CSS file again (duplicate, can be removed) -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Linking to external JavaScript file, loaded after HTML content -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header section containing site title and navigation -->
+    <header>
+        <h1>Bigby</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Me section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Bigby, a passionate web developer with expertise in front-end and back-end technologies.</p>
+        </section>
+
+        <!-- Skills section listing technologies -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>Database Management</li>
+            </ul>
+        </section>
+        <div class="image-container">
+            <img src="images/photo.jpg" alt="Beautiful Landscape">
+        </div>
+
+        <!-- Projects section showcasing work -->
+      <!--  <img src="photo.jpg" alt="Image"> -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio showcasing my skills and work.</p>
+            </div>
+        </section>
+
+        <!-- Contact section with a simple form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer with contact info and background color change button -->
+    <footer>
+        <p>Contact: Bigbywolf@gmail.com</p>
+        <button id="changeColor">Change Background</button>
+    </footer>
+    
+    <!-- Linking JavaScript file again (duplicate, can be removed as it's already included above) -->
+    <script src="script.js"></script>
+
+</body>
+</html>
