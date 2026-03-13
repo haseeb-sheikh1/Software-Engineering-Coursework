@@ -1,0 +1,63 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class Person{
+	private :
+		string name;
+		int age;
+	
+	public;
+        void display_person() {
+           cout << "Name: " << name << endl;
+           cout << "Age: " << age << endl;
+        }
+};
+
+// Intermediate Class(level two) , inherits from Person
+class Employee : public Person {
+private:
+    string employee_id;
+public:
+    void display_employee() {
+        cout << "Employee ID: " << employee_id << endl;
+    }
+};
+
+// Derived Class (Level 3), inherits from Employee
+class Manager : public Employee {
+private:
+    string department;
+public:
+    void display_manager() {
+       cout << "Department: " << department << endl;
+    }
+};
+
+int main() {
+    Manager manager;
+
+    // Accept input from the user
+    cout << "Enter manager name: ";
+    getline(std::cin, manager.name);
+    
+    cout << "Enter manager age: ";
+    cin >> manager.age;
+    cin.ignore();
+
+    cout << "Enter manager employee ID: ";
+    getline(std::cin, manager.employee_id);
+
+    cout << "Enter manager department: ";
+    getline(std::cin, manager.department);
+
+    cout << "\n--- Complete Manager Information ---" << std::endl;
+
+    // Display all information using functions from all levels
+    manager.display_person();
+    manager.display_employee();
+    manager.display_manager();
+
+    return 0;
+}
+	    
+};
