@@ -1,0 +1,4 @@
+                                                         INVOICE
+CUSTOMER: irtza
+Total: Rs 450.00
+Converted Total: 450.00 PKR
